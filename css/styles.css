@@ -86,6 +86,28 @@ nav a{
     
 }
 
+nav a:hover{
+    color: white;
+}
+
+nav a::before{
+    content:"";
+    display: block;
+    height: 5px;
+    background-color: white;
+
+    position: absolute;
+    top: 90px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 4%;
+}
+
+
 /*BODY*/
 
 body{
