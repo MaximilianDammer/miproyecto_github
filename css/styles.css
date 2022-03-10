@@ -1,0 +1,354 @@
+/*Variables*/
+:root{
+    --principal:#0b0c0d;
+    --secondary:#fff; 
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Bowly One SC", cursive;
+    --font-color: white;  
+}
+
+
+/*Normalize*/
+*,
+*::after,
+*::before {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HELPERS*/
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Header & NavBar*/
+
+header{
+    background-color:black;
+}
+
+header .navbar{
+    min-height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+
+.menu li:first-child{
+    width: 110px
+}
+
+
+header .menu{
+    flex-basis: 40%;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.menu li{
+    padding-left: 20px;
+    }
+
+
+
+header .logo{
+
+    margin-left: 80px;
+}
+
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bold;
+    
+}
+
+/*BODY*/
+
+body{
+    background-color: black;
+}
+
+
+
+
+/*FOOTER*/
+
+footer{
+    left: 10px;
+    right: 10px;
+    bottom: 0px;
+    width: 100%;
+    background-color:black;
+    clear: both;
+    height: 150px;
+    align-items: center;
+}
+
+.social-media ul{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    height: 30px;
+    margin: auto;
+    }
+
+.social-media a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: white;
+}
+
+.SocialItems{
+    list-style: none;
+}
+
+
+.QuickLinks ul {
+    display: flex;
+
+    padding: 50px;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.QuickItems{
+    list-style: none;
+}
+
+.QuickItems a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+/*BODY - HOME*/
+
+.grid-container div{
+    background-color: white;
+    border: solid 2px;
+    border-color: black;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 562px 400px;
+    gap: 5px;
+    grid-template-areas:
+    "eins eins"
+    "zwei drei"
+    "vier fuenf"
+}
+
+
+
+.item-1{
+    grid-area: eins;
+    background-image: url(../images/BackgroundImage.png);
+    color: var(--font-color);
+    }
+
+.button-services{
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 12px;
+    text-transform: uppercase;
+    
+}
+
+
+.item-1 h1{
+    margin-top: 30px;
+    height: 50px;
+}
+
+.item-1 h2{
+    margin-top: 0px;
+    
+}
+
+.item-2{
+    grid-area: zwei;
+    align-content: space-evenly;
+    flex-basis: 50%;
+}
+
+.item-2 h3{
+    padding-bottom:0px;
+}
+
+.item-3{
+    grid-area: drei;
+    background: url(../images/Dammer\,\ Maximilian.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.item-4{
+    grid-area: vier;
+    flex-basis:1;
+}
+
+.item-5{
+    grid-area: fuenf;
+    flex-basis:1;
+}
+
+
+/*Media Queries - NAVBAR*/
+
+@media screen and (max-width: 768px){
+    header .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .QuickLinks{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media ul{
+        display: flex;
+    }
+    .QuickLinks ul {
+        display: block;
+        flex: wrap;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 100px;
+    }
+
+    .item-1{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/*Media Queries - HOME*/
+
+@media only screen and (max-width: 1000px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 562px 1fr 1fr;
+        grid-template-areas: 
+        "eins"
+        "zwei"
+        "drei"
+        "vier"
+        "fuenf";
+    }
+}
+
+
+
+/*BODY - SERVICIOS*/
+
+.grid-container2 div{
+    background-color: white;
+    border: solid 2px;
+    border-color: black;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.grid-container2{
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 30px;
+    height: 600px;
+    justify-content: space-evenly;
+    grid-template-areas:
+    "eins zwei drei"
+}
+
+
+
+.servicios-item-1{
+    grid-area: eins;
+}
+
+
+.servicios-item-2{
+    grid-area: zwei;
+}
+
+
+.servicios-item-3{
+    grid-area: drei;
+}
+
+/*Media Queries - SERVICIOS*/
+
+@media only screen and (max-width: 1600px) {
+    .grid-container2{
+        gap: 20px;
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "eins"
+        "zwei"
+        "drei";
+    }
+}
+
+
+
