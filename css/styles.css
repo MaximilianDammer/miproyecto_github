@@ -265,54 +265,7 @@ footer{
 }
 
 
-/*Media Queries - NAVBAR*/
 
-@media screen and (max-width: 768px){
-    header .navbar{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer .QuickLinks{
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .social-media ul{
-        display: flex;
-    }
-    .QuickLinks ul {
-        display: block;
-        flex: wrap;
-        text-align: center;
-        padding-top: 35px;
-        padding-bottom: 100px;
-    }
-
-    .item-1{
-        font-size: 12px;
-    }
-}
-
-
-
-
-
-/*Media Queries - HOME*/
-
-@media only screen and (max-width: 1000px) {
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 562px 1fr 1fr;
-        grid-template-areas: 
-        "eins"
-        "zwei"
-        "drei"
-        "vier"
-        "fuenf";
-    }
-}
 
 
 
@@ -363,20 +316,6 @@ footer{
     color: white;
     text-align: center;
     margin-top: 50px;
-}
-
-/*Media Queries - SERVICIOS*/
-
-@media only screen and (max-width: 1600px) {
-    .grid-container2{
-        gap: 20px;
-        grid-template-columns: 90%;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "eins"
-        "zwei"
-        "drei";
-    }
 }
 
 
@@ -440,4 +379,65 @@ margin-right: 35px;
     width:20%;
     float: right;
     margin-left: 30px;
+}
+
+
+/*Media Queries - SERVICIOS*/
+
+@media only screen and (max-width: 1600px) {
+    .grid-container2{
+        gap: 20px;
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "eins"
+        "zwei"
+        "drei";
+    }
+}
+
+
+/*Media Queries - HOME*/
+
+@media only screen and (max-width: 1000px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 562px 1fr 1fr;
+        grid-template-areas: 
+        "eins"
+        "zwei"
+        "drei"
+        "vier"
+        "fuenf";
+    }
+}
+
+/*Media Queries - NAVBAR*/
+
+@media screen and (max-width: 768px){
+    header .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .QuickLinks{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media ul{
+        display: flex;
+    }
+    .QuickLinks ul {
+        display: block;
+        flex: wrap;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 100px;
+    }
+
+    .item-1{
+        font-size: 12px;
+    }
 }
