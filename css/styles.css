@@ -86,9 +86,14 @@ nav a{
     
 }
 
-nav a:hover{
+nav a :hover{
     color: white;
+    
 }
+
+
+
+
 
 nav a::before{
     content:"";
@@ -204,11 +209,29 @@ footer{
 
 
 
+
 .item-1{
     grid-area: eins;
     background-image: url(../images/BackgroundImage.png);
     color: var(--font-color);
     }
+
+
+/*Home-Animciones*/
+
+.fade-in{
+    animation-duration: 2s;
+    animation-name: fade-in-banner
+}
+
+@keyframes fade-in-banner{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 .button-services{
     background-color: white;
