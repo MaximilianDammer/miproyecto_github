@@ -31,7 +31,7 @@
 /*Header & NavBar*/
 
 header{
-    background-color:black;
+    background-color:var(--principal);
 }
 
 header .navbar{
@@ -44,7 +44,7 @@ header .navbar{
 
 
 .menu li:first-child{
-    width: 80px
+    width: 110px
 }
 
 
@@ -78,7 +78,7 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:var(--font-color);
     text-decoration: none;
     text-transform: uppercase;
     font-style: oblique;
@@ -86,20 +86,19 @@ nav a{
     
 }
 
-nav a :hover{
-    color: white;
+nav .menu a:hover{
+    color: var(--secondary);
     
 }
 
 
 
 
-
-nav a::before{
+nav .menu a::before{
     content:"";
     display: block;
     height: 5px;
-    background-color: white;
+    background-color: var(--secondary);
 
     position: absolute;
     top: 90px;
@@ -116,7 +115,7 @@ nav a:hover::before{
 /*BODY*/
 
 body{
-    background-color: black !important;
+    background-color: var(--principal) !important;
 }
 
 
@@ -129,7 +128,7 @@ footer{
     right: 10px;
     bottom: 0px;
     width: 100%;
-    background-color:black;
+    background-color:var(--principal);
     clear: both;
     height: 150px;
     align-items: center;
@@ -147,7 +146,7 @@ footer{
 .social-media a{
     padding: 10px 20px;
     font-size: 35px;
-    color: white;
+    color: var(--font-color);
 }
 
 .SocialItems{
@@ -176,7 +175,7 @@ footer{
     text-decoration: none;
     padding: 0px 15px;
     font-size: 18px;
-    color: white;
+    color: var(--font-color);
 }
 
 
@@ -184,9 +183,9 @@ footer{
 /*BODY - HOME*/
 
 .grid-container div{
-    background-color: white;
+    background-color: var(--secondary);
     border: solid 2px;
-    border-color: black;
+    border-color: var(--principal);
     padding: 5px;
     margin: 0px;
     text-align: center;
@@ -234,7 +233,8 @@ footer{
 }
 
 .button-services{
-    background-color: white;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
     border-radius: 5px;
     margin: auto;
     margin-top: 30px;
@@ -295,9 +295,9 @@ footer{
 /*BODY - SERVICIOS*/
 
 .grid-container2 div{
-    background-color: white;
+    background-color: var(--secondary);
     border: solid 2px;
-    border-color: black;
+    border-color: var(--principal);
     padding: 5px;
     margin: 0px;
     text-align: center;
@@ -336,7 +336,7 @@ footer{
 }
 
 .servicios-headline{
-    color: white;
+    color: var(--font-color);
     text-align: center;
     margin-top: 50px;
 }
@@ -345,7 +345,7 @@ footer{
 /*Body - Contacto*/
 
 .contact-container{
-    color: white;
+    color: var(--font-color);
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -365,21 +365,21 @@ footer{
 /*Body - Blog*/
 
 .blog-headline{
-    color: white;
+    color: var(--font-color);
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .blog-description{
-    color: white;
+    color: var(--font-color);
 }
 
 
 /*MAIN_Acerca de*/
 
 .about-title{
-    color: white;
+    color: var(--font-color);
     text-align: center;
     margin-top: 50px;
 }
@@ -389,7 +389,7 @@ footer{
     margin:100px auto 150px auto;
     text-align:left;
     line-height: 2;
-    color: white;
+    color: var(--font-color);
 }
 
 .AboutUs-Image1{
