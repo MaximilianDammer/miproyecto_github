@@ -1,0 +1,27 @@
+/*MAIN_Acerca de*/
+
+.about-title{
+    color: $font-color;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Description-AboutUs1{
+    width:50%;
+    margin:100px auto 150px auto;
+    text-align:left;
+    line-height: 2;
+    color: $font-color;
+}
+
+.AboutUs-Image1{
+width: 30%;
+float: left;
+margin-right: 35px;
+}
+
+.AboutUs-Image2{
+    width:20%;
+    float: right;
+    margin-left: 30px;
+}

@@ -1,0 +1,63 @@
+/*BODY - SERVICIOS*/
+
+.grid-container2 div{
+    background-color: $secondary;
+    border: solid 2px;
+    border-color: $principal;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.grid-container2{
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 30px;
+    height: 600px;
+    justify-content: space-evenly;
+    grid-template-areas:
+    "eins zwei drei"
+}
+
+
+
+.servicios-item-1{
+    grid-area: eins;
+}
+
+
+.servicios-item-2{
+    grid-area: zwei;
+}
+
+
+.servicios-item-3{
+    grid-area: drei;
+}
+
+.servicios-headline{
+    color: $font-color;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*Media Queries - SERVICIOS*/
+
+@media only screen and (max-width: 1600px) {
+    .grid-container2{
+        gap: 20px;
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "eins"
+        "zwei"
+        "drei";
+    }
+}

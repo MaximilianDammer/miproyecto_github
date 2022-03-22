@@ -1,0 +1,106 @@
+/*Header & NavBar*/
+
+header{
+    background-color: $principal;
+    .navbar{
+        min-height: 15vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        width: 100%;
+    }
+
+    .logo{
+        margin-left: 80px;
+    }
+
+    .menu{
+        flex-basis: 40%;
+        justify-content: space-between;
+        padding-left: 50px;
+
+        .li:first-child{
+            width: 110px
+        }
+
+        .li{
+            padding-left: 20px;
+            }
+    }
+}
+
+
+nav ul{
+    list-style: none;
+
+    .a{
+        color: $font-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-style: oblique;
+        font-weight: bold;    
+    }
+}
+
+
+
+nav .menu a:hover{
+    color: $secondary;
+    
+}
+
+
+nav .menu a::before{
+    content:"";
+    display: block;
+    height: 5px;
+    background-color: $secondary;
+
+    position: absolute;
+    top: 90px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 4%;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+/*Media Queries - NAVBAR*/
+
+@media screen and (max-width: 768px){
+    header .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .QuickLinks{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media ul{
+        display: flex;
+    }
+    .QuickLinks ul {
+        display: block;
+        flex: wrap;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 100px;
+    }
+
+    .item-1{
+        font-size: 12px;
+    }
+}
