@@ -1,6 +1,6 @@
 /*FOOTER*/
 
-footer{
+footer {
     left: 10px;
     right: 10px;
     bottom: 0px;
@@ -9,47 +9,51 @@ footer{
     clear: both;
     height: 150px;
     align-items: center;
-}
 
-.social-media ul{
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    justify-content: center;
-    height: 30px;
-    margin: auto;
+    .social-media {
+        ul {
+            display: flex;
+            padding: 10px;
+            width: 100%;
+            justify-content: center;
+            height: 30px;
+            margin: auto;
 
-    .a{
-        padding: 10px 20px;
-        font-size: 35px;
-        color: $font-color;
+            .SocialItems {
+                list-style: none;
+
+                a {
+                    padding: 10px 20px;
+                    font-size: 35px;
+                    color: $font-color;
+                }
+            }
+
+
+        }
+
     }
-}
+    .QuickLinks {
+        ul {
+            display: flex;
+            padding: 50px;
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            align-content: center;
+            justify-content: center;
+            list-style: none;
 
+            .QuickItems {
+                list-style: none;
 
-
-.SocialItems{
-    list-style: none;
-}
-
-
-.QuickLinks ul {
-    display: flex;
-
-    padding: 50px;
-    width: 100%;
-    height: 50px;
-    margin: auto;
-    align-content: center;
-    justify-content: center;
-
-    .QuickItems{
-        list-style: none;
-        .a{
-            text-decoration: none;
-            padding: 0px 15px;
-            font-size: 18px;
-            color: $font-color;
+                a {
+                    text-decoration: none;
+                    padding: 0px 15px;
+                    font-size: 18px;
+                    color: $font-color;
+                }
+            }
         }
     }
 }

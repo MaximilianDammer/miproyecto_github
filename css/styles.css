@@ -31,41 +31,36 @@ header {
     align-items: center;
     padding: 0 2rem;
     width: 100%; }
-  header .logo {
-    margin-left: 80px; }
-  header .menu {
-    flex-basis: 40%;
-    justify-content: space-between;
-    padding-left: 50px; }
-    header .menu .li:first-child {
-      width: 110px; }
-    header .menu .li {
-      padding-left: 20px; }
-
-nav ul {
-  list-style: none; }
-  nav ul .a {
-    color: white;
-    text-decoration: none !important;
-    text-transform: uppercase;
-    font-style: oblique;
-    font-weight: bold; }
-
-nav .menu a:hover {
-  color: #fff; }
-
-nav .menu a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background-color: #fff;
-  position: absolute;
-  top: 90px;
-  width: 0%;
-  transition: all ease-in-out 250ms; }
-
-nav a:hover::before {
-  width: 4%; }
+    header .navbar .logo {
+      margin-left: 80px; }
+    header .navbar .menu {
+      flex-basis: 40%;
+      justify-content: space-between;
+      padding-left: 50px;
+      list-style: none; }
+      header .navbar .menu li {
+        padding-left: 20px; }
+        header .navbar .menu li:first-child {
+          width: 110px; }
+      header .navbar .menu a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-style: oblique;
+        font-weight: bold; }
+        header .navbar .menu a:hover {
+          color: #fff; }
+          header .navbar .menu a:hover:before {
+            width: 4%; }
+        header .navbar .menu a::before {
+          content: "";
+          display: block;
+          height: 5px;
+          background-color: #fff;
+          position: absolute;
+          top: 90px;
+          width: 0%;
+          transition: all ease-in-out 250ms; }
 
 .flex-row {
   display: flex;
@@ -102,37 +97,35 @@ footer {
   clear: both;
   height: 150px;
   align-items: center; }
-
-.social-media ul {
-  display: flex;
-  padding: 10px;
-  width: 100%;
-  justify-content: center;
-  height: 30px;
-  margin: auto; }
-  .social-media ul .a {
-    padding: 10px 20px;
-    font-size: 35px;
-    color: white; }
-
-.SocialItems {
-  list-style: none; }
-
-.QuickLinks ul {
-  display: flex;
-  padding: 50px;
-  width: 100%;
-  height: 50px;
-  margin: auto;
-  align-content: center;
-  justify-content: center; }
-  .QuickLinks ul .QuickItems {
+  footer .social-media ul {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    height: 30px;
+    margin: auto; }
+    footer .social-media ul .SocialItems {
+      list-style: none; }
+      footer .social-media ul .SocialItems a {
+        padding: 10px 20px;
+        font-size: 35px;
+        color: white; }
+  footer .QuickLinks ul {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
     list-style: none; }
-    .QuickLinks ul .QuickItems .a {
-      text-decoration: none;
-      padding: 0px 15px;
-      font-size: 18px;
-      color: white; }
+    footer .QuickLinks ul .QuickItems {
+      list-style: none; }
+      footer .QuickLinks ul .QuickItems a {
+        text-decoration: none;
+        padding: 0px 15px;
+        font-size: 18px;
+        color: white; }
 
 /*VIEWS*/
 /*BODY - HOME*/
@@ -197,7 +190,7 @@ footer {
 
 .item-3 {
   grid-area: drei;
-  background: url(../images/Dammer);
+  background: url(../images/DammerMaximilian.jpg);
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
