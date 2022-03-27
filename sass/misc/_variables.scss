@@ -6,4 +6,12 @@ $font-primary: "Inter", sans-serif;
 $font-secondary: "Bowly One SC", cursive;
 $font-color: white;  
 
+$color: (
+    principal: #0b0c0d,
+    secondary:#fff, 
+);
+
+h1{
+    color: map-get($map: $color, $key: secondary);
+}
 

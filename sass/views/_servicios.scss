@@ -45,6 +45,11 @@
     color: $font-color;
     text-align: center;
     margin-top: 50px;
+
+    &--extend{
+        @extend .servicios-headline;
+        margin-bottom: 50px;
+    }
 }
 
 

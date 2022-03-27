@@ -1,5 +1,8 @@
 /*VARIABLES*/
 /*Variables*/
+h1 {
+  color: #fff; }
+
 /*GLOBALS*/
 /*Normalize*/
 *,
@@ -236,12 +239,6 @@ footer {
   margin-left: 30px; }
 
 /*Body - Blog*/
-.blog-headline {
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
 .blog-description {
   color: white; }
 
@@ -289,10 +286,12 @@ footer {
 .servicios-item-3 {
   grid-area: drei; }
 
-.servicios-headline {
+.servicios-headline, .servicios-headline--extend {
   color: white;
   text-align: center;
   margin-top: 50px; }
+  .servicios-headline--extend {
+    margin-bottom: 50px; }
 
 /*Media Queries - SERVICIOS*/
 @media only screen and (max-width: 1600px) {
