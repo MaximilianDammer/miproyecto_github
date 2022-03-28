@@ -1,9 +1,8 @@
 /*HELPERS*/
-.flex-row{
-    display: flex;
-}
 
-.flex-column{
+
+@mixin flex ($direction){
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
+    
 }
