@@ -4,14 +4,17 @@ header {
     background-color: $principal;
 
     .navbar {
-        min-height: 15vh;
+        min-height: 8vh;
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
+        margin-top: 25px;
         width: 100%;
+        border-bottom: solid 1px #474749;
 
         .logo {
             margin-left: 80px;
+            margin-bottom: 20px;
         }
 
         .menu {
@@ -22,6 +25,7 @@ header {
 
             li {
                 padding-left: 20px;
+                padding-top: 20px;
 
                 &:first-child {
                     width: 110px
@@ -95,5 +99,50 @@ header {
 
     .item-1 {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .menu {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header {
+        background-color: $principal;
+    
+        .navbar {
+            min-height: 8vh;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            margin-top: 1px;
+            width: 100%;
+    
+            .logo {
+                margin-left: 40px;
+                margin-bottom: 20px;
+            }
+    
+            .menu {
+                flex-basis: 40%;
+                justify-content: space-between;
+                padding-left: 10px;
+                list-style: none;
+    
+                li {
+                    padding-left: 20px;
+                    padding-top: 5px;
+                }
+            }
+        }
     }
 }
