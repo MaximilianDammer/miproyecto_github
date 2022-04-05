@@ -247,7 +247,8 @@ footer {
 .item-4 p {
   text-align: left;
   margin-left: 30px;
-  margin-right: 30px; }
+  margin-right: 30px;
+  height: auto; }
 
 .item-5 {
   grid-area: fuenf;
