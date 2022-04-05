@@ -37,11 +37,7 @@ header {
 
 
                 &:hover {
-                    color: $secondary;
-
-                    &:before {
-                        width: 4%;
-                    }
+                    outline: solid 2px #555;
                 }
 
                 &::before {

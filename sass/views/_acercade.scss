@@ -1,27 +1,36 @@
 /*MAIN_Acerca de*/
 
-.about-title{
-    color: $font-color;
+.about-title {
+    color: white;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 70px;
 }
 
-.Description-AboutUs1{
-    width:50%;
-    margin:100px auto 150px auto;
-    text-align:left;
-    line-height: 2;
-    color: $font-color;
+.container-acercade {
+    margin-bottom: 100px;
+
+    h3 {
+        color: rgb(78, 74, 74);
+    }
 }
 
-.AboutUs-Image1{
-width: 30%;
-float: left;
-margin-right: 35px;
+.container li {
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 15px;
 }
 
-.AboutUs-Image2{
-    width:20%;
-    float: right;
-    margin-left: 30px;
+.about-containers {
+    background-color: #222;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.icons {
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

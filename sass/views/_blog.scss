@@ -1,12 +1,11 @@
 /*Body - Blog*/
 
-// .blog-headline{
-//     color: $font-color;
-//     text-align: center;
-//     margin-top: 50px;
-//     margin-bottom: 50px;
-// }
-
-.blog-description{
-    color: $font-color;
+.blog-title {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px
 }
+
+.blog-description {
+    color: $font-color;}
