@@ -184,6 +184,8 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  .item-1 ul {
+    list-style-position: outside; }
 
 /*Home-Animciones*/
 .fade-in {
@@ -271,11 +273,6 @@ footer {
   margin-top: 50px;
   margin-bottom: 70px; }
 
-.container-acercade {
-  margin-bottom: 100px; }
-  .container-acercade h3 {
-    color: #4e4a4a; }
-
 .container li {
   text-align: left;
   margin-left: 60px;
@@ -284,14 +281,21 @@ footer {
 .about-containers {
   background-color: #222;
   margin: 10px;
+  margin-bottom: 100px;
   text-align: center;
   color: #fff; }
+  .about-containers ul {
+    list-style-position: outside; }
+  .about-containers h3 {
+    color: #646363;
+    margin-bottom: 25px; }
 
 .icons {
   text-decoration: none;
   font-size: 30px;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  color: #0A66C2; }
 
 /*Body - Blog*/
 .blog-title {
@@ -302,6 +306,9 @@ footer {
 
 .blog-description {
   color: white; }
+
+h2 .accordion-button {
+  background-color: #9bd4c0; }
 
 /*Body - Contacto*/
 .contact-container {
@@ -336,7 +343,12 @@ footer {
   text-align: center;
   color: #fff;
   border: solid 2px white;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 80px; }
+
+ul {
+  list-style-position: outside; }
 
 .row-2 {
   margin-bottom: 80px; }
