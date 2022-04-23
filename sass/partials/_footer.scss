@@ -10,7 +10,7 @@ footer {
     height: 150px;
     align-items: center;
 
-    .social-media {
+    .SocialMedia {
         ul {
             display: flex;
             padding: 10px;
@@ -55,5 +55,19 @@ footer {
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .QuickLinks {
+        ul{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            margin-top: 10px;
+        }
+    }
     }
 }
